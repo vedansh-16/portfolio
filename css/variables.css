@@ -1,0 +1,49 @@
+/* ============================================================
+   PORTFOLIO — DESIGN TOKENS
+   ============================================================ */
+:root {
+    /* ── Backgrounds ── */
+    --bg-primary:   #FFFFFF;
+    --bg-secondary: #F8F8F8;
+    --bg-card:      #FFFFFF;
+    --bg-dark:      #0F0F0F;
+    --bg-dark-2:    #1A1A1A;
+
+    /* ── Borders ── */
+    --border:       #E2E2E2;
+    --border-dark:  #D0D0D0;
+
+    /* ── Brand / Accent ── */
+    --primary:       #DC2626;
+    --primary-dark:  #B91C1C;
+    --primary-light: #EF4444;
+    --primary-bg:    #FEF2F2;  /* very light red tint */
+
+    /* ── Text ── */
+    --text-primary:   #111111;
+    --text-secondary: #555555;
+    --text-muted:     #888888;
+    --text-white:     #FFFFFF;
+
+    /* ── Spacing ── */
+    --section-px: 60px;
+    --section-py: 50px;
+
+    /* ── Typography ── */
+    --font-main: 'Inter', 'Poppins', sans-serif;
+    --fw-regular: 400;
+    --fw-medium:  500;
+    --fw-semibold:600;
+    --fw-bold:    700;
+    --fw-black:   900;
+
+    /* ── Radius ── */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-pill: 100px;
+
+    /* ── Shadows ── */
+    --shadow-card: 0 1px 4px rgba(0,0,0,.07);
+    --shadow-btn:  0 2px 8px rgba(220,38,38,.25);
+}

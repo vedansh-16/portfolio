@@ -3,238 +3,509 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedansh Jakhmola | Computer Science Student</title>
+    <meta name="description" content="Vedansh Jakhmola — B.Tech CSE Student, DSA Enthusiast and Web Development Learner based in Dehradun, India.">
 
-    <title>Vedansh Jakhmola</title>
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-<header>
+<header id="navbar">
     <nav class="navbar">
-        <a href="#" class="logo">
-            Vedansh Jakhmola
-        </a>
+        <div class="nav-brand">
+            <div class="nav-logo-mark">VJ</div>
+            <div class="nav-brand-text">
+                <span class="nav-brand-name">VEDANSH</span>
+                <span class="nav-brand-sub">JAKHMOLA</span>
+            </div>
+        </div>
 
         <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hero"         class="nav-link active">Home</a></li>
+            <li><a href="#about"        class="nav-link">About</a></li>
+            <li><a href="#skills"       class="nav-link">Skills</a></li>
+            <li><a href="#projects"     class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#education"    class="nav-link">Education</a></li>
+            <li><a href="#contact"      class="nav-link">Contact</a></li>
         </ul>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="assets/resume/resume.pdf" class="btn btn-red nav-cv" download>
+            <i class="fa-solid fa-download"></i> Download CV
+        </a>
     </nav>
 </header>
 
 <main>
 
+    <!-- ══════════════════════ HERO ══════════════════════ -->
     <section id="hero">
         <div class="hero">
-            <div class="head hero-head">
-                <h1>VEDANSH JAKHMOLA</h1>
+            <div class="hero-main">
+                <div class="hero-desc">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name-black">VEDANSH</h1>
+                    <h1 class="hero-name-red">JAKHMOLA</h1>
+                    <h2 class="hero-tagline">Computer Science Student | DSA Enthusiast | Web Development Learner</h2>
+                    <p class="hero-body">
+                        BTech CSE student exploring and strengthening problem-solving skills, web development, and learning modern technologies.
+                    </p>
+                    <span class="hero-btns">
+                        <a href="#projects" class="btn btn-red">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact"  class="btn btn-outline">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+                    </span>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero.png" alt="Vedansh Jakhmola">
+                </div>
             </div>
-            <div class="sub-head hero-sub-head">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-            </div>
-            <div class="hero-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat facere labore incidunt itaque. Tempora quidem nemo fugiat quas! Doloribus sint, laudantium officia reprehenderit nisi saepe aspernatur, delectus ab nesciunt repudiandae eum harum culpa officiis maxime fuga debitis molestias hic? Accusantium omnis illo mollitia nemo possimus vel nostrum iste quos.
-            </div>
-            <div class="btn btn-hero">
-                <button><a href="#projects">My Projects</a></button>
-                <button><a href=" ">Download Resume</a></button>
+            <div class="social-icons">
+                <a href="https://github.com/vedansh-16" class="social-icon" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vedansh-jakhmola/" class="social-icon" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://leetcode.com/u/Vedanshhh/" class="social-icon" target="_blank" aria-label="LeetCode">
+                    <img src="https://cdn.simpleicons.org/leetcode/000000" alt="LeetCode" class="social-svg">
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- ══════════════════════ ABOUT ══════════════════════ -->
     <section id="about">
         <div class="about">
-            <div class="head abt-head">
+            <div class="head about-head">
+                <p class="section-label"><i class="fa-solid fa-user"></i> ABOUT ME</p>
                 <h1>ABOUT ME</h1>
             </div>
-            <div class="abt-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi adipisci deleniti totam nobis odio, autem voluptatibus fugit? Quae eveniet vero vel odio rerum at omnis blanditiis nemo quo alias molestiae sunt quia nisi quibusdam est unde porro officia saepe facere quos, dicta tempora. Nihil magni facere unde voluptatibus aliquam repellendus delectus placeat repudiandae molestiae qui? Exercitationem quibusdam totam obcaecati placeat nemo deleniti eos distinctio impedit voluptatum cupiditate quo ad corrupti quod velit libero rem officia, harum nulla ullam beatae dicta, accusantium fuga cumque magnam. Delectus tempore voluptatibus facere. Nobis tempora, assumenda provident asperiores voluptatem quod obcaecati sapiente accusantium nostrum delectus!
+
+            <div class="about-main">
+                <div class="about-img">
+                    <img src="assets/images/about.png" alt="">
+                </div>
+                <div class="about-content">
+                    <p>
+                        I'm a 4th year B.Tech CSE student at DIT University, Dehradun, with a passion
+                        for building things and solving real-world problems through code. I enjoy working
+                        on web development projects, practising Data Structures &amp; Algorithms, and
+                        continuously exploring new technologies.
+                    </p>
+                    <p class="about-content-p2">
+                        I am currently focused on strengthening my problem-solving skills through
+                        competitive programming, building hands-on web projects, and gradually exploring
+                        the world of DevOps and Cloud. I believe in learning by doing and I'm always
+                        looking for opportunities to grow.
+                    </p>
+                </div>
             </div>
-            <div class="abt-stats">
-               <p>4th Year Computer Science Student</p>
 
-                <p>7.4 Current CGPA</p>
-
-                <p>250+ LeetCode Problems</p>
-
+            <div class="about-stats">
+                <div>
+                    <i class="fa-solid fa-calendar-days stat-icon"></i>
+                    <p class="stat-label">Age</p>
+                    <h2 class="stat-number">20</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot stat-icon"></i>
+                    <p class="stat-label">Location</p>
+                    <h2 class="stat-value">Dehradun,<br>India</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap stat-icon"></i>
+                    <p class="stat-label">Education</p>
+                    <h2 class="stat-value">BTech CSE<br>(4th Year)</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line stat-icon"></i>
+                    <p class="stat-label">Current CGPA</p>
+                    <h2 class="stat-number">7.45</h2>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ══════════════════════ SKILLS ══════════════════════ -->
     <section id="skills">
         <div class="skills">
-            <div class="head skill-head">
-                    <h1>SKILLS</h1>
+            <div class="skills-main">
+                <div class="skills-head">
+                    <p class="section-label"><i class="fa-solid fa-code"></i> MY SKILLS</p>
+                    <h1>Technologies <span class="red">I Work With</span></h1>
+                    <p class="skills-body">
+                        I love turning ideas into real world solutions. These are the technologies I work with and continuously improve every day.
+                    </p>
+                    <a href="assets/resume/resume.pdf" class="btn btn-red" download>Download Resume</a>
+                </div>
+
+                <div class="technical-section">
+                    <h2 class="technical-title">Technical Skills</h2>
+                    <div class="technical-skills">
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+                            </div>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML">
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/css" alt="CSS">
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="SQL">
+                            </div>
+                            <p>SQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React">
+                            </div>
+                            <p>React</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+                            </div>
+                            <p>Git</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/github/000000" alt="GitHub">
+                            </div>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker">
+                            </div>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="languages skill-card">
-                
-                <div class="lang-item">
-                    <img src="" class="skill-logo">
-                    <div>Java</div>
-                </div>
-                <div class="lang-item">
-                    <img src="" class="skill-logo">
-                    <div>JavaScript</div>
-                </div class="lang-item">
-                <div>
-                    <img src="" class="skill-logo">
-                    <div>SQL</div>
-                </div>
-            </div>
-
-            <div class="frontend skill-card">
-                <div class="frontend-item">
-                    <img src="" class="skill-logo">
-                    <div>HTML</div>
-                </div>
-                <div class="frontend-item">
-                    <img src="" class="skill-logo">
-                    <div>CSS</div>
-                </div>
-                <div class="frontend-item">
-                    <img src="" class="skill-logo">
-                    <div>React</div>
-                </div>
-            </div>
-
-            <div class="database skill-card">
-                <div class="db-item">
-                    <img src="" class="skill-logo">
-                    <div>MySql</div>
-                </div>
-            </div>
-            <div class="tools skill-card">
-                <div class="tools-item">
-                    <img src="" class="skill-logo">
-                    <div>GitHub</div>
-                </div>
-                <div class="tools-item">
-                    <img src="" class="skill-logo">
-                    <div>Docker</div>
-                </div>
+            <div class="other-skills">
+                <div>Data Structures &amp; Algorithms</div>
+                <div>OOPs Concepts</div>
+                <div>DBMS</div>
+                <div>Operating Systems</div>
+                <div>Problem Solving</div>
+                <div>Computer Networks</div>
             </div>
         </div>
     </section>
 
+    <!-- ══════════════════════ PROJECTS ══════════════════════ -->
     <section id="projects">
         <div class="projects">
-            <div class="head pro-head">
-            <h1>PROJECTS</h1>
+            <div class="head project-head">
+                <p class="section-label"><i class="fa-solid fa-folder-open"></i> FEATURED PROJECTS</p>
+                <h1>Things I've <span class="red">Built</span></h1>
+            </div>
+            <div class="project-container">
+                <div class="project-cards">
+                    <div class="project-img">
+                        <img src="assets/images/portfolio-project-image.png" alt="Project Image">
+                    </div>
+                    <div class="project-name">
+                        <h2>Personal Portfolio Website</h2>
+                        <p>A responsive portfolio website built with HTML, CSS and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="open-project">
+                        <a href="#" class="btn btn-red btn-sm">Live Demo</a>
+                        <a href="https://github.com/vedansh-16/portfolio" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+                <div class="project-cards">
+                    <div class="project-img">
+                        <img src="" alt="Project Image">
+                    </div>
+                    <div class="project-name">
+                        <h2>Coming Soon</h2>
+                        <p>.........</p>
+                        <div class="project-tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                    <div class="open-project">
+                        <a href="" class="btn btn-red btn-sm">Live Demo</a>
+                        <a href="" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
+    <!-- ══════════════════════ ACHIEVEMENTS ══════════════════════ -->
     <section id="achievements">
-         <div class="achievements">
-        <div class="head achievement-head">
-            <h1>ACHIEVEMENTS</h1>
+        <div class="achievements">
+            <div class="head achievement-head">
+                <p class="section-label"><i class="fa-solid fa-trophy"></i> ACHIEVEMENTS</p>
+                <h1>Milestones &amp; <span class="red">Highlights</span></h1>
+            </div>
+
+            <div class="achievement-container">
+                <div class="achievement-card">
+                    <div class="a-logo">
+                        <img src="https://img.icons8.com/?size=100&id=nx2Sc3yJeXDy&format=png&color=000000" alt="DSA">
+                    </div>
+                    <h2>Data Structures &amp; Algorithm</h2>
+                    <p class="achievement-number" id="dsa-solved">...</p>
+                    <p>Problems Solved</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="a-logo">
+                        <img src="https://cdn.simpleicons.org/geeksforgeeks/2F8D46" alt="GeeksforGeeks">
+                    </div>
+                    <h2>GFG</h2>
+                    <p class="achievement-number" id="gfg-rank">331</p>
+                    <p>Institute Rank</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="a-logo">
+                        <img src="https://cdn.simpleicons.org/github/000000" alt="GitHub">
+                    </div>
+                    <h2>GitHub</h2>
+                    <p class="achievement-number" id="github-contributions">...</p>
+                    <p>Contributions</p>
+                </div>
+            </div>
+
+            <div class="certificates">
+                <div class="c-heading"><p class="section-label"><i class="fa-solid fa-certificate"></i> CERTIFICATIONS</p></div>
+                <div class="c-cards">
+                    
+                    <div class="cert-card">
+                       <div class="cert-logo">
+                            <img src="https://cdn.simpleicons.org/coursera" alt="Coursera">
+                       </div>
+
+                        <h3>Database Management Essentials</h3>
+
+                        <p class="cert-issuer">University of Colorado System</p>
+
+                        <p class="cert-year">2025</p>
+
+                        <a href="https://coursera.org/share/c9c6544f5606758654fd8f5c14466c87"
+                        target="_blank"
+                        class="cert-btn">
+                            View Certificate
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+
+                    
+                    <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="https://cdn.simpleicons.org/coursera" alt="Coursera">
+                            </div>
+
+                        <h3>Linux Fundamentals</h3>
+
+                        <p class="cert-issuer">LearnQuest</p>
+
+                        <p class="cert-year">2025</p>
+
+                        <a href="https://coursera.org/share/c2b8a59e897823d7a81abe545602d5cb"
+                        target="_blank"
+                        class="cert-btn">
+                            View Certificate
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-logo">
+                        <img src="https://www.futureskillsprime.in/per/g10/pub/32914/iDH/instance/1/template/4/final/image/future_skill.webp"
+                            alt="FutureSkills Prime">
+                        </div>
+
+                        <h3>Introduction of Cloud Computing</h3>
+
+                        <p class="cert-issuer">NASSCOM • FutureSkills Prime</p>
+
+                        <p class="cert-year">2026</p>
+
+                        <a href="assets/certificates/cloud-computing-nasscom.png"
+                        target="_blank"
+                        class="cert-btn">
+                            View Certificate
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="achievement-container">
-
-            <div class="achievement-card">
-                <h2>LeetCode</h2>
-                <p class="achievement-number">250+</p>
-                <p>Problems Solved</p>
-            </div>
-
-            <div class="achievement-card">
-                <h2>GeeksforGeeks</h2>
-                <p class="achievement-number">--</p>
-                <p>College Rank</p>
-            </div>
-
-            <div class="achievement-card">
-                <h2>Certificates</h2>
-                <p class="achievement-number">--</p>
-                <p>Completed</p>
-            </div>
-
-        </div>
-    </div>
     </section>
 
-    
+    <!-- ══════════════════════ EDUCATION ══════════════════════ -->
     <section id="education">
         <div class="education">
-
             <div class="head education-head">
-                <h1>EDUCATION</h1>
+                <p class="section-label"><i class="fa-solid fa-book-open"></i> EDUCATION</p>
+                <h1>My Academic <span class="red">Journey</span></h1>
             </div>
 
-            <div class="education-card">
-
-                <h2>DIT University</h2>
-
-                <h3>Bachelor of Technology</h3>
-
-                <p>Computer Science & Engineering</p>
-
-                <p>2023 - 2027</p>
-
-                <p>Current CGPA : 7.4</p>
-
+            <div class="edu-timeline">
+                <div class="education-card">
+                    <div class="timeline-dot"></div>
+                    <div class="edu-info">
+                        <p class="edu-year">2023 – Present</p>
+                        <h2>B.Tech in Computer Science and Engineering</h2>
+                        <p class="edu-institution">DIT University, Dehradun</p>
+                        <p class="edu-grade">CGPA: 7.45 (Current)</p>
+                    </div>
+                    <div class="edu-logo">
+                        <i class="fa-solid fa-university edu-icon"></i>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="timeline-dot"></div>
+                    <div class="edu-info">
+                        <p class="edu-year">2023</p>
+                        <h2>Senior Secondary (Class 12th)</h2>
+                        <p class="edu-institution">Scholars Home Sr. Sec. School</p>
+                        <p class="edu-grade">Percentage: 77.5%</p>
+                    </div>
+                    <div class="edu-logo">
+                        <i class="fa-solid fa-school edu-icon"></i>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="timeline-dot"></div>
+                    <div class="edu-info">
+                        <p class="edu-year">2021</p>
+                        <h2>Secondary (Class 10th)</h2>
+                        <p class="edu-institution">Scholars Home Sr. Sec. School</p>
+                        <p class="edu-grade">Percentage: 84.83%</p>
+                    </div>
+                    <div class="edu-logo">
+                        <i class="fa-solid fa-school edu-icon"></i>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
+    <!-- ══════════════════════ CONTACT ══════════════════════ -->
     <section id="contact">
         <div class="contact">
             <div class="head cont-head">
-                <h1>CONTACT ME</h1>
+                <p class="section-label"><i class="fa-solid fa-paper-plane"></i> GET IN TOUCH</p>
+                <h1>Let's <span class="red">Connect</span></h1>
+                <p class="contact-sub">I'm always open to discussing new projects, creative ideas or opportunities.</p>
             </div>
             <div class="contact-details">
-
                 <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>yourmail@example.com</p>
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:vedanshjakhmola@gmail.com">vedanshjakhmola@gmail.com</a>
+                    </div>
                 </div>
-
                 <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p>+91 XXXXX XXXXX</p>
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 8126491221</p>
+                    </div>
                 </div>
-
                 <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>Dehradun, Uttarakhand</p>
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Dehradun, Uttarakhand, India</p>
+                    </div>
                 </div>
-
-                <div class="contact-item">
-                    <h3>GitHub</h3>
-                    <a href="">github.com/vedansh-16</a>
-                </div>
-
-                <div class="contact-item">
-                    <h3>LinkedIn</h3>
-                    <a href="">linkedin.com/in/...</a>
-                </div>
-            </div>    
+            </div>
+            <div class="contact-socials">
+                <a href="https://github.com/vedansh-16" class="social-icon" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vedansh-jakhmola/" class="social-icon" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://leetcode.com/u/Vedanshhh/" class="social-icon" target="_blank" aria-label="LeetCode">
+                    <img src="https://cdn.simpleicons.org/leetcode/000000" alt="LeetCode" class="social-svg">
+                </a>
+            </div>
         </div>
-
     </section>
 
 </main>
 
 <footer>
-    div class="footer">
-
-        <h2>Vedansh Jakhmola</h2>
-
-        <p>Java Full Stack Developer</p>
-
-        <p>&copy; 2026 All Rights Reserved.</p>
-
+    <div class="footer">
+        <div class="footer-brand">
+            <div class="nav-logo-mark footer-logo-mark">VJ</div>
+            <div class="nav-brand-text">
+                <span class="nav-brand-name">VEDANSH</span>
+                <span class="nav-brand-sub">JAKHMOLA</span>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-connect">
+            <h4>Let's Connect</h4>
+            <p>Always open to collaborations and opportunities.</p>
+            <a href="mailto:vedanshjakhmola@gmail.com" class="footer-email">
+                <i class="fa-solid fa-envelope"></i> vedanshjakhmola@gmail.com
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Vedansh Jakhmola. All rights reserved.</p>
     </div>
 </footer>
 

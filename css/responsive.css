@@ -1,0 +1,182 @@
+
+/* ── Tablet (≤ 1024px) ─────────────────────────────────── */
+@media (max-width: 1024px) {
+    :root {
+        --section-px: 36px;
+    }
+
+    /* Navbar */
+    .nav-links { gap: 0; }
+    .nav-link   { padding: 6px 8px; font-size: 0.82rem; }
+
+    /* Hero */
+    .hero-main { gap: 24px; }
+    .hero-desc { width: 55%; }
+    .hero-img   { width: 45%; }
+    .hero-name-black,
+    .hero-name-red { font-size: 3.5rem; }
+
+    /* About */
+    .about-img { display: none; }
+    .about-content { width: 100%; }
+
+    /* Skills grid */
+    .technical-skills { grid-template-columns: repeat(3, 1fr); }
+
+    /* Projects */
+    .project-container { gap: 16px; }
+
+    /* Achievements */
+    .achievement-container { gap: 16px; }
+}
+
+/* ── Mobile (≤ 768px) ──────────────────────────────────── */
+@media (max-width: 768px) {
+    :root {
+        --section-px: 20px;
+        --section-py: 30px;
+    }
+
+    section { height: auto; min-height: 100vh; }
+
+    
+    /* Navbar */
+        .navbar {
+            padding: 0 20px;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+
+            padding: 12px 20px;
+
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+    /* Hero */
+    .hero { padding-top: 80px; }
+    .hero-main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0 10px;
+    }
+    .hero-desc { width: 100%; }
+    .hero-img   {
+        width: 100%;
+        height: 40vh;
+    }
+    .hero-name-black,
+    .hero-name-red { font-size: 2.8rem; }
+
+    /* About */
+    .about {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .about-main  { flex-direction: column; max-height: none; }
+    .about-img   { display: none; }
+    .about-content { width: 100%; }
+    .about-stats { height: auto; flex-wrap: wrap; }
+    .about-stats div { width: 50%; border-right: 1.5px solid var(--border); padding: 16px 0; }
+    .about-stats div:nth-child(2) { border-right: none; }
+
+    /* Skills */
+    .skills {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .skills-main { flex-direction: column; max-height: none; }
+    .skills-head { width: 100%; }
+    .technical-skills { grid-template-columns: repeat(3, 1fr); }
+
+    /* Projects */
+    .projects {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .project-container {
+        flex-direction: column;
+        max-height: none;
+    }
+    .project-cards { min-height: 380px; }
+
+    /* Achievements */
+    .achievements {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .achievement-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .c-cards { flex-direction: column; max-height: none; }
+    .cert-card { min-height: 80px; }
+
+    /* Education */
+    .education {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .edu-timeline { height: auto; padding-left: 16px; }
+    .education-card { max-height: none; }
+
+    /* Contact */
+    .contact {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .contact-details { flex-direction: column; }
+    .contact-item { min-width: 0; width: 100%; }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        gap: 32px;
+        padding: 40px 20px 24px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 16px 20px;
+    }
+}
+
+/* ── Small Mobile (≤ 480px) ─────────────────────────────── */
+@media (max-width: 480px) {
+    .hero-name-black,
+    .hero-name-red { font-size: 2.2rem; }
+
+    .about-stats div { width: 50%; }
+    .technical-skills { grid-template-columns: repeat(2, 1fr); }
+
+    .nav-cv { display: none; }
+}
