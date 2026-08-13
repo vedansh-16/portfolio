@@ -41,6 +41,10 @@ I am currently focused on:
 - [LeetCode](https://leetcode.com/u/Vedanshhh/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/profile/vedanshjvd1v)
 
+## 🌐 Live Demo
+
+🚀 **Live Demo:** [My portfolio](https://vedansh-portfolio-wine.vercel.app/)
+
 ## 📂 Project Structure
 
 ```text
